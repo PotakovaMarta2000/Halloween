@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header site-header-bg">
+            <h1>Halloween</h1>
+            <div class="spider spider-animation"></div>
+        </header>
+    </div>
+
+    <script>
+        const spider = document.querySelector('.spider');
+
+        function scarySound(){
+            const audio = new Audio();
+            audio.preload = 'auto';
+            audio.src = './scarry.mp3';
+            audio.play();
+        }
+        
+        spider.onclick = scarySound;
+    </script>
+    
+</body>
+</html>

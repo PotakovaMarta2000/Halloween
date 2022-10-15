@@ -1,0 +1,77 @@
+* {
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    min-width:1200px;
+    min-height: 650px;
+    background: url(img/halloween-bg.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    animation-name:container-animation;
+    animation-duration: 6s;
+    animation-fill-mode: forwards; 
+}
+.site-header {
+    padding: 9px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+.site-header h1 {
+    font-size:7rem;
+    position: relative;
+    top: 250px;
+    margin-left:130px;
+    color: rgb(24, 23, 23, 0.9);
+    transition: background-color 5s linear;
+    transition: all 5s ease;
+}
+.site-header h1:hover {
+    color: rgba(255, 121, 32, 0.9);
+    text-shadow:rgb(0, 0, 0) 1px 0 10px;
+    opacity:0.9;
+}
+@keyframes container-animation {
+    0% {
+     background-position-y:-50%;    
+    }
+   100% {
+    background-position-y:100%;
+   }
+}
+.spider {
+    width:200px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;  
+    background-image: url(img/spider.png);
+    background-size: contain;
+    left: 730px;
+    top:-370px ;
+    cursor: pointer;
+}
+.spider-animation {
+    animation-name:header-animation-spider;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes header-animation-spider {
+    0% {
+        top: -350%;
+    }
+    60% {
+        top: -75px;
+    }
+    70% {
+        top: -130px;
+    }
+    80% {
+        top: -100px;
+    }
+    100% {
+        top: -120px;
+    }
+}
